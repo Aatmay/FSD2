@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Pizza Online | Domino's Pizza India</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS - LINKED -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Top Location Bar -->
+    <div class="top-location-bar">
+        <div class="container-fluid px-3">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="location-left">
+                    <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                    <span class="fw-bold text-danger">No Location</span>
+                    <i class="fas fa-chevron-down ms-1 small"></i>
+                    <p class="d-inline ms-3 mb-0 text-muted small">Exact Location Required!</p>
+                </div>
+                <!-- CART ICON WITH BADGE - CLICK TO OPEN CART -->
+                <div class="user-profile" id="cartIcon">
+                    <i class="fas fa-shopping-cart fs-4 text-secondary"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blue Delivery Banner -->
+    <div class="delivery-banner">
+        <div class="container-fluid px-3">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="d-flex align-items-center">
+                    <div class="location-icon-circle me-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="text-white">
+                        <p class="mb-0 fw-semibold">Give us your exact location</p>
+                        <p class="mb-0 small">for seamless delivery</p>
+                    </div>
+                </div>
+                <button class="btn-detect">Detect location</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delivery Options Tabs -->
+    <div class="delivery-tabs">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="tab-option active-tab">
+                        <h5 class="mb-0 fw-bold">Delivery</h5>
+                        <p class="mb-0 small">NOW</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tab-option">
+                        <h5 class="mb-0 fw-semibold text-muted">Takeaway</h5>
+                        <p class="mb-0 small text-muted">Select Store</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tab-option">
+                        <h5 class="mb-0 fw-semibold text-muted">Dine-in</h5>
+                        <p class="mb-0 small text-muted">Select Store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Section -->
+    <section class="category-section">
+        <div class="container">
+            <h4 class="section-heading mb-4">What are you craving for?</h4>
+            <div class="category-carousel">
+                <div class="category-item">
+                    <div class="category-badge love-badge">Love Loaded@299</div>
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/1c34c150-61cc-4b86-b6e2-f176285f5745_Loveloaded.png?ver=V0.0.1" alt="Love Loaded">
+                    </div>
+                    <p class="category-label">Love Loaded@299</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-badge new-badge">NEW</div>
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/652faf34-8a23-4df7-b6d8-31a721368100_CheeseLavaPull.png?ver=V0.0.1" alt="Cheese Lava">
+                    </div>
+                    <p class="category-label">Cheese Lava</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-badge new-badge">NEW</div>
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/0d2ec13b-9d56-4041-9954-968128ec732c_BigBigPizza_Normal.png?ver=V0.0.1" alt="Big Big Pizza">
+                    </div>
+                    <p class="category-label">Big Big Pizza</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-badge lunch-badge">LUNCH FEAST</div>
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/34b8d6a0-c68f-4bc0-94ee-fb2671d99226_LunchFeastCoke.png?ver=V0.0.1" alt="5 Course">
+                    </div>
+                    <p class="category-label">5 Course Lunch Feast</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/de9b4339-d70a-4b55-b5a0-80b3790a6dbe_ValueCombosNew.png?ver=V0.0.1" alt="Value Combos">
+                    </div>
+                    <p class="category-label">Value Combos</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/d870ede4-5309-4ef3-a4cf-cae0e0d9e30e_VegPizza.png?ver=V0.0.1" alt="Veg Pizza">
+                    </div>
+                    <p class="category-label">Veg Pizza</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/b0e4a584-dbff-4653-b8cd-10203c9cc7f6_PizzaManianew.png?ver=V0.0.1" alt="Pizza Mania">
+                    </div>
+                    <p class="category-label">Pizza Mania</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-badge yellow-badge">NEW FLAVOURS</div>
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/386370eb-6cc4-47b9-b647-e71218598916_garlicbread.jpg?ver=V0.0.1" alt="Garlic Breads">
+                    </div>
+                    <p class="category-label">Garlic Breads & Dips</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/158e5fa8-d02c-489b-beea-e3cc3dfe7aed_noonionnogarlic.png?ver=V0.0.1" alt="No Onion">
+                    </div>
+                    <p class="category-label">No Onion No Garlic</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-badge yellow-badge">NEW FLAVOURS</div>
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/365e6079-e793-43af-b194-d5c57b7fb461_cheeseburst.jpg?ver=V0.0.1" alt="Cheese Burst">
+                    </div>
+                    <p class="category-label">Cheese Burst Pizza</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/ee382caf-962a-4586-aa3b-3d9fcaf9796f_crezydeal.png?ver=V0.0.1" alt="Crazy Deals">
+                    </div>
+                    <p class="category-label">Crazy Deals</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-badge new-badge">NEW</div>
+                    <div class="category-circle">
+                        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/4ec05c36-7f03-4a1a-b9d2-5d974ceaf8fe_cheesevolcano.jpg?ver=V0.0.1" alt="Cheese Volcano">
+                    </div>
+                    <p class="category-label">Cheese Volcano</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's New Section -->
+    <section class="whats-new">
+        <div class="container">
+            <h4 class="section-heading mb-4">What's New</h4>
+            <div class="row g-3">
+                <div class="col-lg-2dot4 col-md-4 col-6">
+                    <div class="promo-banner">
+                        <img src="https://api.dominos.co.in/prod-olo-api/images/dynamicOffers/Sunday_Special_offers_AC_202410201729399304_202410211729485978_202410221729573259_202411201732090902_202412261735198159_202503181742280842_202503181742280870.jpg?ver=0.0.1" alt="Offer">
+                    </div>
+                </div>
+                <div class="col-lg-2dot4 col-md-4 col-6">
+                    <div class="promo-banner">
+                        <img src="https://api.dominos.co.in/prod-olo-api/images/dynamicOffers/Dominos_Cheese-Burst-AC_202410241729754536.JPG?ver=0.0.1" alt="Offer">
+                    </div>
+                </div>
+                <div class="col-lg-2dot4 col-md-4 col-6">
+                    <div class="promo-banner">
+                        <img src="https://api.dominos.co.in/prod-olo-api/images/dynamicOffers/Domino%2527s_cheese-volcano-revamp_AC_202409301727679855_202411081731063825.jpg?ver=0.0.1" alt="Offer">
+                    </div>
+                </div>
+                <div class="col-lg-2dot4 col-md-4 col-6">
+                    <div class="promo-banner">
+                        <img src="https://api.dominos.co.in/prod-olo-api/images/dynamicOffers/Chocolava_KV_App_Carousel_400x220px_202409301727679882_202410011727758996_202410011727766705_202410091728451033_202410151728996299_202410161729071005_202410241729754696_202411071730957121_202503181742281735_202503191742361186.jpg?ver=0.0.1" alt="Offer">
+                    </div>
+                </div>
+                <div class="col-lg-2dot4 col-md-4 col-6">
+                    <div class="promo-banner">
+                        <img src="https://api.dominos.co.in/prod-olo-api/images/dynamicOffers/cheese_rewards_corousal_202210201666257463_202503181742281667.jpg?ver=0.0.1" alt="Offer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 10 Bestsellers Section -->
+    <section class="bestsellers">
+        <div class="container">
+            <div class="bestseller-header text-center mb-4">
+                <img src="https://cdn-icons-png.flaticon.com/128/2583/2583985.png" alt="Crown" class="crown-icon">
+                <h3 class="bestseller-title">Top 10 Bestsellers</h3>
+                <p class="text-warning mb-0"><i class="fas fa-map-marker-alt"></i> In Your Locality</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="top-badge">Domino's<br>TOP 10</div>
+                        <div class="customise-overlay">Customise <i class="fas fa-chevron-right"></i></div>
+                        <div class="product-image">
+                            <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/05e8ba85-4444-4c19-b085-8012f1baf0b4_margherita_side.webp?ver=V0.0.1" alt="Margherita">
+                        </div>
+                        <div class="product-info">
+                            <div class="d-flex align-items-start mb-2">
+                                <span class="veg-icon me-2">🟢</span>
+                                <h5 class="product-name mb-0">Margherita</h5>
+                            </div>
+                            <p class="product-desc">Classic delight with 100% real mozzarella cheese.</p>
+                            <div class="product-footer">
+                                <div class="price-section mb-2">
+                                    <span class="price">₹109</span>
+                                    <p class="size-text mb-0">Regular | New Hand Tossed</p>
+                                </div>
+                                <button class="btn-add-to-cart">Add +</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="top-badge">Domino's<br>TOP 10</div>
+                        <div class="customise-overlay">Customise <i class="fas fa-chevron-right"></i></div>
+                        <div class="product-image">
+                            <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a52b70f2-01cb-42b8-ae4f-566df999115c_farmhouse_side.webp?ver=V0.0.1" alt="Farmhouse">
+                        </div>
+                        <div class="product-info">
+                            <div class="d-flex align-items-start mb-2">
+                                <span class="veg-icon me-2">🟢</span>
+                                <h5 class="product-name mb-0">Farmhouse</h5>
+                            </div>
+                            <p class="product-desc">Delightful combination of onion, capsicum, tomato & grilled mushroom.</p>
+                            <div class="product-footer">
+                                <div class="price-section mb-2">
+                                    <span class="price">₹259</span>
+                                    <p class="size-text mb-0">Regular | New Hand Tossed</p>
+                                </div>
+                                <button class="btn-add-to-cart">Add +</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="top-badge">Domino's<br>TOP 10</div>
+                        <div class="customise-overlay">Customise <i class="fas fa-chevron-right"></i></div>
+                        <div class="product-image">
+                            <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/ff2e39b8-87cc-4f3f-a2f5-06198a85f3df_peppy_paneer_side.webp?ver=V0.0.1" alt="Peppy Paneer">
+                        </div>
+                        <div class="product-info">
+                            <div class="d-flex align-items-start mb-2">
+                                <span class="veg-icon me-2">🟢</span>
+                                <h5 class="product-name mb-0">Peppy Paneer</h5>
+                            </div>
+                            <p class="product-desc">Flavorful trio of juicy paneer, crisp capsicum with spicy red paprika.</p>
+                            <div class="product-footer">
+                                <div class="price-section mb-2">
+                                    <span class="price">₹259</span>
+                                    <p class="size-text mb-0">Regular | New Hand Tossed</p>
+                                </div>
+                                <button class="btn-add-to-cart">Add +</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="top-badge">Domino's<br>TOP 10</div>
+                        <div class="customise-overlay">Customise <i class="fas fa-chevron-right"></i></div>
+                        <div class="product-image">
+                            <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a542d031-5fc8-4902-bbb3-25eebd3ace7e_veggie_paradise_side.webp?ver=V0.0.1" alt="Veggie Paradise">
+                        </div>
+                        <div class="product-info">
+                            <div class="d-flex align-items-start mb-2">
+                                <span class="veg-icon me-2">🟢</span>
+                                <h5 class="product-name mb-0">Veggie Paradise</h5>
+                            </div>
+                            <p class="product-desc">The awesome foursome! Golden corn, black olives, capsicum, red paprika.</p>
+                            <div class="product-footer">
+                                <div class="price-section mb-2">
+                                    <span class="price">₹259</span>
+                                    <p class="size-text mb-0">Regular | New Hand Tossed</p>
+                                </div>
+                                <button class="btn-add-to-cart">Add +</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-navigation">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-6">
+                    <div class="bottom-nav-item active">
+                        <i class="fas fa-bars"></i>
+                        <span>Menu</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="bottom-nav-item">
+                        <i class="fas fa-tag"></i>
+                        <span>Offers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript - LINKED -->
+    <script src="script.js"></script>
+</body>
+</html>
